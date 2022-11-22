@@ -37,44 +37,66 @@ let areaDeJogo1 = document.querySelector("#score_area__marcio");
 let areaDeJogo2 = document.querySelector("#score_area__miguel");
 
 
-const criandoJogo = (bandeira1, bandeira2) => {
+const criandoJogoMarcio = (bandeiras = [], result = []) => {
     let newSeat = '';
     newSeat = `<div class="seat">
-    <img src="${bandeira1}" class="art_area__logo"> <input type="number" class="art_area__imputScore"> x <input type="number" class="art_area__imputScore"> <img src="${bandeira2}" class="art_area__logo">
+    <img src="${bandeiras[0]}" class="art_area__logo"> <input type="number" class="art_area__imputScore1" value="${result[0]}"> x <input type="number" class="art_area__imputScore2" value="${result[1]}"> <img src="${bandeiras[1]}" class="art_area__logo">
     </div>`;
-    console.log(newSeat);
     areaDeJogo1.innerHTML += newSeat;
+}
+
+const criandoJogoMiguel = (bandeiras = [], result = []) => {
+    let newSeat = '';
+    newSeat = `<div class="seat">
+    <img src="${bandeiras[0]}" class="art_area__logo"> <input type="number" class="art_area__imputScore1" value="${result[0]}"> x <input type="number" class="art_area__imputScore2" value="${result[1]}"> <img src="${bandeiras[1]}" class="art_area__logo">
+    </div>`;
     areaDeJogo2.innerHTML += newSeat;
 }
 
-criandoJogo(bandeiras.Catar, bandeiras.equador);
+criandoJogoMarcio([bandeiras.Catar, bandeiras.equador], [1,1]);
+criandoJogoMiguel([bandeiras.Catar, bandeiras.equador], [2,3]);
 
-criandoJogo(bandeiras.senegal, bandeiras.holanda);
+criandoJogoMarcio([bandeiras.senegal, bandeiras.holanda], [1,3]);
+criandoJogoMiguel([bandeiras.senegal, bandeiras.holanda], [1,0]);
 
-criandoJogo(bandeiras.inglaterra, bandeiras.ira);
+criandoJogoMarcio([bandeiras.inglaterra, bandeiras.ira], [3,0]);
+criandoJogoMiguel([bandeiras.inglaterra, bandeiras.ira], [0,0]);
 
-criandoJogo(bandeiras.eua, bandeiras.paisDeGales);
+criandoJogoMarcio([bandeiras.eua, bandeiras.paisDeGales], [1,1]);
+criandoJogoMiguel([bandeiras.eua, bandeiras.paisDeGales], [1,1]);
 
-criandoJogo(bandeiras.argentina, bandeiras.arabiaSaudita);
+criandoJogoMarcio([bandeiras.argentina, bandeiras.arabiaSaudita], [3,0]);
+criandoJogoMiguel([bandeiras.argentina, bandeiras.arabiaSaudita], [7,5]);
 
-criandoJogo(bandeiras.mexico, bandeiras.polonia);
+criandoJogoMarcio([bandeiras.mexico, bandeiras.polonia], [0,1]);
+criandoJogoMiguel([bandeiras.mexico, bandeiras.polonia], [1,0]);
 
-criandoJogo(bandeiras.dinamarca, bandeiras.tunisia);
+criandoJogoMarcio([bandeiras.dinamarca, bandeiras.tunisia], [2,1]);
+criandoJogoMiguel([bandeiras.dinamarca, bandeiras.tunisia], [3,2]);
 
-criandoJogo(bandeiras.franca, bandeiras.australia);
+criandoJogoMarcio([bandeiras.franca, bandeiras.australia], [4,0]);
+criandoJogoMiguel([bandeiras.franca, bandeiras.australia], [3,0]);
 
-criandoJogo(bandeiras.alemanha, bandeiras.japao);
+criandoJogoMarcio([bandeiras.alemanha, bandeiras.japao], [1,0]);
+criandoJogoMiguel([bandeiras.alemanha, bandeiras.japao], [0,3]);
 
-criandoJogo(bandeiras.espanha, bandeiras.costaRica);
+criandoJogoMarcio([bandeiras.espanha, bandeiras.costaRica], [2,0]);
+criandoJogoMiguel([bandeiras.espanha, bandeiras.costaRica], [0,1]);
 
-criandoJogo(bandeiras.marrocos, bandeiras.croacia);
+criandoJogoMarcio([bandeiras.marrocos, bandeiras.croacia], [0,2]);
+criandoJogoMiguel([bandeiras.marrocos, bandeiras.croacia], [0,0]);
 
-criandoJogo(bandeiras.belgica, bandeiras.canada);
+criandoJogoMarcio([bandeiras.belgica, bandeiras.canada], [4,1]);
+criandoJogoMiguel([bandeiras.belgica, bandeiras.canada], [3,5]);
 
-criandoJogo(bandeiras.servia, bandeiras.camaroes);
+criandoJogoMarcio([bandeiras.servia, bandeiras.camaroes], [2,2]);
+criandoJogoMiguel([bandeiras.servia, bandeiras.camaroes], [3,4]);
 
-criandoJogo(bandeiras.brasil, bandeiras.suica);
+criandoJogoMarcio([bandeiras.brasil, bandeiras.suica], [3,0]);
+criandoJogoMiguel([bandeiras.brasil, bandeiras.suica], [1,1]);
 
-criandoJogo(bandeiras.uruguai, bandeiras.coreiaDoSul);
+criandoJogoMarcio([bandeiras.uruguai, bandeiras.coreiaDoSul], [3,1]);
+criandoJogoMiguel([bandeiras.uruguai, bandeiras.coreiaDoSul], [10,0]);
 
-criandoJogo(bandeiras.portugal, bandeiras.gana);
+criandoJogoMarcio([bandeiras.portugal, bandeiras.gana], [2,1]);
+criandoJogoMiguel([bandeiras.portugal, bandeiras.gana], [13,13]);

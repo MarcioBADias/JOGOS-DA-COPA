@@ -1,0 +1,58 @@
+.background{
+    background: url(../img/futebol_bg.jpg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.art_area{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vw;
+    width: 100vw;
+}
+
+.logo_copa{
+    display: flex;
+    margin: 100px;
+    width: 600px;
+}
+
+.score_area{
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: .5rem;
+    width: 40%;
+    
+}
+
+.seat{
+    display: flex;
+    font-size: 3.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 28%;
+    text-align: center;
+    width: 40%;
+}
+
+.art_area__logo{
+    border: .5px solid black;
+    border-radius: 500px;
+    display: flex;
+    height: 50px;
+    margin: .3rem;
+    padding: .1rem;
+    text-align: center;
+    width: 50px;
+}

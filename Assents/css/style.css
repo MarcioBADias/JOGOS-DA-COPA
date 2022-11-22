@@ -1,14 +1,8 @@
 .background{
-    background: url(../img/futebol_bg.jpg);
+    background: url(../img/futebol_bg.jpg), no-repeat;
     display: flex;
     flex-wrap: wrap;
-}
-
-.art_area{
-    display: flex;
-    flex-wrap: wrap;
-    height: 48vw;
-    width: 100vw;
+    min-width: 1116px;
 }
 
 .logo_copa{
@@ -26,7 +20,6 @@
     margin: auto;
     margin-bottom: 2rem;
     padding: .5rem;
-    width: 45%;
     
 }
 
@@ -59,7 +52,7 @@
     width: 50px;
 }
 
-.art_area__imputScore{
+.art_area__imputScore1, .art_area__imputScore2{
     background: none;
     border: none;
     height: 3rem;

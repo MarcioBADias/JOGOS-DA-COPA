@@ -7,24 +7,26 @@
 .art_area{
     display: flex;
     flex-wrap: wrap;
-    height: 40vw;
+    height: 48vw;
     width: 100vw;
 }
 
 .logo_copa{
     display: flex;
+    
     margin: 100px;
-    width: 600px;
+    
 }
 
 .score_area{
-    background: white;
+    background: #ebe6e6a6;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    margin-bottom: 2rem;
     padding: .5rem;
-    width: 40%;
+    width: 45%;
     
 }
 
@@ -55,4 +57,15 @@
     padding: .1rem;
     text-align: center;
     width: 50px;
+}
+
+.art_area__imputScore{
+    background: none;
+    border: none;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .5rem 0 0 .5rem;
+    text-align: center;
+    width: 3rem;
 }

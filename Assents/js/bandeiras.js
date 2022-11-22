@@ -40,7 +40,7 @@ let areaDeJogo2 = document.querySelector("#score_area__miguel");
 const criandoJogo = (bandeira1, bandeira2) => {
     let newSeat = '';
     newSeat = `<div class="seat">
-    <img src="${bandeira1}" class="art_area__logo"> 0 x 0 <img src="${bandeira2}" class="art_area__logo">
+    <img src="${bandeira1}" class="art_area__logo"> <input type="number" class="art_area__imputScore"> x <input type="number" class="art_area__imputScore"> <img src="${bandeira2}" class="art_area__logo">
     </div>`;
     console.log(newSeat);
     areaDeJogo1.innerHTML += newSeat;
